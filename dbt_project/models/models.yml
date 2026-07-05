@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: stg_employees
+    description: "Automated AI-profiled staging table for messy employee data."
+    columns:
+      - name: Employee_ID
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - unique
+          - not_null
+      - name: First_Name
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null # Contains PII
+      - name: Last_Name
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null # Contains PII
+      - name: Age
+        description: "AI Detected Type: INTEGER."
+        tests:
+          - not_null
+      - name: Department_Region
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null
+      - name: Status
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null
+      - name: Join_Date
+        description: "AI Detected Type: DATE."
+        tests:
+          - not_null
+      - name: Salary
+        description: "AI Detected Type: DECIMAL."
+        tests:
+          - not_null
+      - name: Email
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null # Contains PII
+      - name: Phone
+        description: "AI Detected Type: BIGINT."
+        tests:
+          - not_null # Contains PII
+      - name: Performance_Score
+        description: "AI Detected Type: VARCHAR."
+        tests:
+          - not_null
+      - name: Remote_Work
+        description: "AI Detected Type: BOOLEAN."
+        tests:
+          - not_null
