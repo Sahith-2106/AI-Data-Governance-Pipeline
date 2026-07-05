@@ -58,4 +58,8 @@ If column structures or formatting rules change, the serverless function rewrite
 │   │   ├── stg_employees.sql   # SQL transformation, data cleansing, and masking layer
 │   │   └── models.yml          # AI-Generated data quality schema & validation rules
 │   └── dbt_project.yml
+├── raw_data/
+│   └── Messy_Employee_dataset.csv  # Input messy dataset
+├── snowflake_setup/
+│   └── snowflake_setup.sql    # Contains series of sql statements from snowflake 
 └── README.md
