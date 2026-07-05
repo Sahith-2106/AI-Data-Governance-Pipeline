@@ -1,4 +1,4 @@
-# Autonomous AI Data Governance & Secure Analytics Pipeline
+# Autonomous Data Governance: A Proof-of-Concept Using AI in Data Pipelines
 
 An event-driven data pipeline that leverages Generative AI to automatically profile incoming datasets, generate dbt quality tests, isolate sensitive data (PII), and enforce masking rules inside Snowflake.
 
